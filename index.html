@@ -76,7 +76,7 @@
             //output value of the qr code
             outputData.innerText = code.data;
             if(code.data != null){
-              window.location.replace(code.data, '_self');
+              window.open(code.data,"_self")
             }
           } else {
             outputMessage.hidden = false;
