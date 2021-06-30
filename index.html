@@ -112,7 +112,7 @@
           //result of the qr will be inside code.data property
           outputData.innerText = code.data;
           if(code.data != null){
-            window.location.href = code.data;
+            window.open(code.data, '_blank').focus();
           }
         } else {
           outputMessage.hidden = false;
